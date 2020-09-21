@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="font-family: Calibri, 'Trebuchet MS', sans-serif;">
+    <div id="actionDiv" style="display: inline-flex;">
+        <div style="margin-right: 1cm;">
+            <h3>Click on the button to find games:</h3>
+            <button type="button" id="games-button">Find games!</button>
+        </div>
+
+        <div>
+            <h3>Add yourself a new game:</h3>
+            <label for="yourOwnTitle">Game title:</label>
+            <input type="text" id="yourTitle" name="yourOwnTitle"><br>
+            <label for="yourOwnImage">Game image source:</label>
+            <input type="text" id="yourImage" name="yourOwnImage"><br>
+            <label for="yourOwnDescription">Game description:</label>
+            <input type="text" id="yourDescription" name="yourOwnDescription"><br><br>
+            <button type="button" id="addYourGameButton">Add!</button>
+
+            <h3>You can also add from below:</h3>
+            <div>
+                <input type="checkbox" id="gtaV" name="gtaCinci" class="checkers">
+                <label for="gtaCinci">Grand Theft Auto V</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mk11" name="mortalKombat11" class="checkers">
+                <label for="mortalKombat11">Mortal Kombat 11</label>
+            </div>
+            <div>
+                <input type="checkbox" id="marvelAvengers" name="mAvengers" class="checkers">
+                <label for="mAvengers">Marvel's Avengers 2020</label><br><br>
+                <button type="button" id="addSuggestedGameButton">Add!</button>
+            </div>
+        </div>
+        <div style="padding-left: 1cm;">
+            <h3>Select the game you want to delete:</h3>
+            <label for="deleteGameId">Enter game id:</label>
+            <input type="text" id="deleteId" name="deleteGameId"><br><br>
+            <button type="button" id="deleteIdButton">Delete!</button>
+
+        </div>
+    </div>
+    <br><br><br>
+
+    <div>
+        <div id="newGamesDiv"></div>
+    </div>
+    <div>
+        <div id="gamesDiv"></div>
+    </div>
+    <div>
+        <div id="errorDiv"></div>
+    </div>
+
+    <script src="Ajax-games3.js"></script>
+</body>
+
+</html>
